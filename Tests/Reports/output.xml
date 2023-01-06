@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.9 on darwin)" generated="20230104 22:50:05.042" rpa="false" schemaversion="3">
+<suite id="s1" name="ProdutosLojinha" source="/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/ProdutosLojinha.robot">
+<test id="s1-t1" name="CT01 - Cadastro de Produto com informações válidas" line="9">
+<kw name="Login com usuario admin" library="ResourceLojinhaLogin" type="SETUP">
+<kw name="Acessa página" library="ResourceLojinhaLogin">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20230104 22:50:05.548" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/Reports/browser/traces/1992bac7-00da-4f54-95ab-fc5ce064dd52"}</msg>
+<msg timestamp="20230104 22:50:06.121" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/Reports/browser/traces/1992bac7-00da-4f54-95ab-fc5ce064dd52"}</msg>
+<status status="PASS" starttime="20230104 22:50:05.547" endtime="20230104 22:50:06.121"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20230104 22:50:07.739" level="INFO">Successfully initialized new page object and opened url: http://165.227.93.41/lojinha-web/v2</msg>
+<msg timestamp="20230104 22:50:07.739" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230104 22:50:06.121" endtime="20230104 22:50:07.739"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${cabecalhoLogin}</arg>
+<arg>contains</arg>
+<arg>Acessar a Lojinha</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:07.740" endtime="20230104 22:50:07.776"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:07.853" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:07.776" endtime="20230104 22:50:07.853"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:05.547" endtime="20230104 22:50:07.854"/>
+</kw>
+<kw name="Preenche usuario &quot;admin&quot;" library="ResourceLojinhaLogin" sourcename="Preenche usuario &quot;${usuario}&quot;">
+<kw name="Click" library="Browser">
+<arg>${labelUsuario}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:07.854" endtime="20230104 22:50:07.891"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${campoUsuario}</arg>
+<arg>${usuario}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:07.891" level="INFO">Types the text 'admin' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:07.891" endtime="20230104 22:50:07.905"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:07.971" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:07.905" endtime="20230104 22:50:07.971"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:07.854" endtime="20230104 22:50:07.971"/>
+</kw>
+<kw name="Preenche senha &quot;admin&quot;" library="ResourceLojinhaLogin" sourcename="Preenche senha &quot;${senha}&quot;">
+<kw name="Click" library="Browser">
+<arg>${labelSenha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:07.971" endtime="20230104 22:50:08.002"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${campoSenha}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:08.002" level="INFO">Types the text 'admin' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:08.002" endtime="20230104 22:50:08.012"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:08.086" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:08.013" endtime="20230104 22:50:08.086"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:07.971" endtime="20230104 22:50:08.087"/>
+</kw>
+<kw name="Aperta botao ENTRAR" library="ResourceLojinhaLogin">
+<kw name="Click" library="Browser">
+<arg>${botaoEntrar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:08.087" endtime="20230104 22:50:08.902"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:08.087" endtime="20230104 22:50:08.902"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:05.547" endtime="20230104 22:50:08.902"/>
+</kw>
+<kw name="Selecionar Adicionar Produto" library="ResourceLojinhaProdutos">
+<kw name="Click" library="Browser">
+<arg>${botaoAdicionarProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:08.903" endtime="20230104 22:50:09.693"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:08.902" endtime="20230104 22:50:09.693"/>
+</kw>
+<kw name="Preenche nome do produto &quot;Playstation 2023&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche nome do produto &quot;${nomeDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoNomeDoProduto}</arg>
+<arg>${nomeDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:09.694" level="INFO">Types the text 'Playstation 2023' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:09.694" endtime="20230104 22:50:09.727"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:09.804" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:09.727" endtime="20230104 22:50:09.804"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:09.694" endtime="20230104 22:50:09.804"/>
+</kw>
+<kw name="Preenche valor do produto &quot;900,00&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche valor do produto &quot;${valorDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoValorDoProduto}</arg>
+<arg>${valorDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:09.805" level="INFO">Types the text '900,00' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:09.805" endtime="20230104 22:50:10.112"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:10.189" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:10.112" endtime="20230104 22:50:10.189"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:09.805" endtime="20230104 22:50:10.189"/>
+</kw>
+<kw name="Preenche cores do produto &quot;Branco, Preto, Azul&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche cores do produto &quot;${coresDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoCoresDoProduto}</arg>
+<arg>${coresDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:10.190" level="INFO">Types the text 'Branco, Preto, Azul' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:10.189" endtime="20230104 22:50:10.210"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:10.294" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:10.210" endtime="20230104 22:50:10.294"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:10.189" endtime="20230104 22:50:10.294"/>
+</kw>
+<kw name="Pressiona botao Salvar" library="ResourceLojinhaAdicaoDeProdutos">
+<kw name="Click" library="Browser">
+<arg>${botaoSalvar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:10.295" endtime="20230104 22:50:10.521"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:10.294" endtime="20230104 22:50:10.521"/>
+</kw>
+<kw name="Verifica mensagem toast &quot;Produto adicionado com sucesso&quot;" library="ResourceLojinhaProdutos" sourcename="Verifica mensagem toast &quot;${mensagem}&quot;">
+<kw name="Get Text" library="Browser">
+<arg>${toastErro}</arg>
+<arg>contains</arg>
+<arg>${mensagem}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:10.522" endtime="20230104 22:50:10.762"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:10.837" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:10.762" endtime="20230104 22:50:10.837"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:10.522" endtime="20230104 22:50:10.837"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:05.545" endtime="20230104 22:50:10.837"/>
+</test>
+<test id="s1-t2" name="CT02 - Cadastro de Produto com valor 0" line="17">
+<kw name="Login com usuario admin" library="ResourceLojinhaLogin" type="SETUP">
+<kw name="Acessa página" library="ResourceLojinhaLogin">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20230104 22:50:10.881" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/Reports/browser/traces/d2cb7874-d01a-4f49-9559-9e5a30aba7cc"}</msg>
+<msg timestamp="20230104 22:50:11.101" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/Reports/browser/traces/d2cb7874-d01a-4f49-9559-9e5a30aba7cc"}</msg>
+<status status="PASS" starttime="20230104 22:50:10.881" endtime="20230104 22:50:11.101"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20230104 22:50:12.489" level="INFO">Successfully initialized new page object and opened url: http://165.227.93.41/lojinha-web/v2</msg>
+<msg timestamp="20230104 22:50:12.489" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230104 22:50:11.102" endtime="20230104 22:50:12.490"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${cabecalhoLogin}</arg>
+<arg>contains</arg>
+<arg>Acessar a Lojinha</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:12.490" endtime="20230104 22:50:12.519"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:12.590" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:12.519" endtime="20230104 22:50:12.590"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:10.881" endtime="20230104 22:50:12.591"/>
+</kw>
+<kw name="Preenche usuario &quot;admin&quot;" library="ResourceLojinhaLogin" sourcename="Preenche usuario &quot;${usuario}&quot;">
+<kw name="Click" library="Browser">
+<arg>${labelUsuario}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:12.591" endtime="20230104 22:50:12.626"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${campoUsuario}</arg>
+<arg>${usuario}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:12.626" level="INFO">Types the text 'admin' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:12.626" endtime="20230104 22:50:12.637"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:12.706" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-9.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:12.637" endtime="20230104 22:50:12.706"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:12.591" endtime="20230104 22:50:12.707"/>
+</kw>
+<kw name="Preenche senha &quot;admin&quot;" library="ResourceLojinhaLogin" sourcename="Preenche senha &quot;${senha}&quot;">
+<kw name="Click" library="Browser">
+<arg>${labelSenha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:12.707" endtime="20230104 22:50:12.738"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${campoSenha}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:12.738" level="INFO">Types the text 'admin' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:12.738" endtime="20230104 22:50:12.748"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:12.827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-10.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:12.749" endtime="20230104 22:50:12.827"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:12.707" endtime="20230104 22:50:12.828"/>
+</kw>
+<kw name="Aperta botao ENTRAR" library="ResourceLojinhaLogin">
+<kw name="Click" library="Browser">
+<arg>${botaoEntrar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:12.828" endtime="20230104 22:50:13.598"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:12.828" endtime="20230104 22:50:13.599"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:10.881" endtime="20230104 22:50:13.599"/>
+</kw>
+<kw name="Selecionar Adicionar Produto" library="ResourceLojinhaProdutos">
+<kw name="Click" library="Browser">
+<arg>${botaoAdicionarProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:13.599" endtime="20230104 22:50:14.359"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:13.599" endtime="20230104 22:50:14.359"/>
+</kw>
+<kw name="Preenche nome do produto &quot;Playstation 2023&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche nome do produto &quot;${nomeDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoNomeDoProduto}</arg>
+<arg>${nomeDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:14.360" level="INFO">Types the text 'Playstation 2023' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:14.360" endtime="20230104 22:50:14.673"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:14.739" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-11.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:14.673" endtime="20230104 22:50:14.739"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:14.359" endtime="20230104 22:50:14.739"/>
+</kw>
+<kw name="Preenche valor do produto &quot;0,00&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche valor do produto &quot;${valorDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoValorDoProduto}</arg>
+<arg>${valorDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:14.740" level="INFO">Types the text '0,00' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:14.740" endtime="20230104 22:50:14.754"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:14.830" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-12.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:14.754" endtime="20230104 22:50:14.830"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:14.739" endtime="20230104 22:50:14.830"/>
+</kw>
+<kw name="Preenche cores do produto &quot;Branco, Preto, Azul&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche cores do produto &quot;${coresDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoCoresDoProduto}</arg>
+<arg>${coresDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:14.830" level="INFO">Types the text 'Branco, Preto, Azul' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:14.830" endtime="20230104 22:50:14.850"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:14.925" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-13.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:14.850" endtime="20230104 22:50:14.925"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:14.830" endtime="20230104 22:50:14.925"/>
+</kw>
+<kw name="Pressiona botao Salvar" library="ResourceLojinhaAdicaoDeProdutos">
+<kw name="Click" library="Browser">
+<arg>${botaoSalvar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:14.925" endtime="20230104 22:50:15.107"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:14.925" endtime="20230104 22:50:15.108"/>
+</kw>
+<kw name="Verifica mensagem toast &quot;O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00&quot;" library="ResourceLojinhaProdutos" sourcename="Verifica mensagem toast &quot;${mensagem}&quot;">
+<kw name="Get Text" library="Browser">
+<arg>${toastErro}</arg>
+<arg>contains</arg>
+<arg>${mensagem}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:15.108" endtime="20230104 22:50:16.097"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:16.291" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-14.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:16.097" endtime="20230104 22:50:16.291"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:15.108" endtime="20230104 22:50:16.291"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:10.880" endtime="20230104 22:50:16.291"/>
+</test>
+<test id="s1-t3" name="CT03 - Cadastro de Produto com valor 7001" line="25">
+<kw name="Login com usuario admin" library="ResourceLojinhaLogin" type="SETUP">
+<kw name="Acessa página" library="ResourceLojinhaLogin">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20230104 22:50:16.596" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/Reports/browser/traces/06276db2-4569-4c63-b0d8-55dc5fdf463c"}</msg>
+<msg timestamp="20230104 22:50:16.818" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/Reports/browser/traces/06276db2-4569-4c63-b0d8-55dc5fdf463c"}</msg>
+<status status="PASS" starttime="20230104 22:50:16.595" endtime="20230104 22:50:16.818"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20230104 22:50:18.246" level="INFO">Successfully initialized new page object and opened url: http://165.227.93.41/lojinha-web/v2</msg>
+<msg timestamp="20230104 22:50:18.246" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230104 22:50:16.818" endtime="20230104 22:50:18.246"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${cabecalhoLogin}</arg>
+<arg>contains</arg>
+<arg>Acessar a Lojinha</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:18.246" endtime="20230104 22:50:18.276"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:18.353" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-15.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:18.276" endtime="20230104 22:50:18.353"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:16.595" endtime="20230104 22:50:18.353"/>
+</kw>
+<kw name="Preenche usuario &quot;admin&quot;" library="ResourceLojinhaLogin" sourcename="Preenche usuario &quot;${usuario}&quot;">
+<kw name="Click" library="Browser">
+<arg>${labelUsuario}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:18.353" endtime="20230104 22:50:18.397"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${campoUsuario}</arg>
+<arg>${usuario}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:18.398" level="INFO">Types the text 'admin' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:18.397" endtime="20230104 22:50:18.409"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:18.473" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-16.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:18.409" endtime="20230104 22:50:18.473"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:18.353" endtime="20230104 22:50:18.474"/>
+</kw>
+<kw name="Preenche senha &quot;admin&quot;" library="ResourceLojinhaLogin" sourcename="Preenche senha &quot;${senha}&quot;">
+<kw name="Click" library="Browser">
+<arg>${labelSenha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:18.474" endtime="20230104 22:50:18.511"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${campoSenha}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:18.511" level="INFO">Types the text 'admin' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:18.511" endtime="20230104 22:50:18.520"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:18.595" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-17.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:18.521" endtime="20230104 22:50:18.595"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:18.474" endtime="20230104 22:50:18.595"/>
+</kw>
+<kw name="Aperta botao ENTRAR" library="ResourceLojinhaLogin">
+<kw name="Click" library="Browser">
+<arg>${botaoEntrar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:18.595" endtime="20230104 22:50:19.381"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:18.595" endtime="20230104 22:50:19.381"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:16.595" endtime="20230104 22:50:19.381"/>
+</kw>
+<kw name="Selecionar Adicionar Produto" library="ResourceLojinhaProdutos">
+<kw name="Click" library="Browser">
+<arg>${botaoAdicionarProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:19.382" endtime="20230104 22:50:20.156"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:19.381" endtime="20230104 22:50:20.156"/>
+</kw>
+<kw name="Preenche nome do produto &quot;Playstation 2023&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche nome do produto &quot;${nomeDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoNomeDoProduto}</arg>
+<arg>${nomeDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:20.157" level="INFO">Types the text 'Playstation 2023' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:20.157" endtime="20230104 22:50:20.186"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:20.260" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-18.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:20.186" endtime="20230104 22:50:20.260"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:20.157" endtime="20230104 22:50:20.260"/>
+</kw>
+<kw name="Preenche valor do produto &quot;7001,00&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche valor do produto &quot;${valorDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoValorDoProduto}</arg>
+<arg>${valorDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:20.261" level="INFO">Types the text '7001,00' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:20.260" endtime="20230104 22:50:20.271"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:20.599" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-19.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:20.272" endtime="20230104 22:50:20.599"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:20.260" endtime="20230104 22:50:20.599"/>
+</kw>
+<kw name="Preenche cores do produto &quot;Branco, Preto, Azul&quot;" library="ResourceLojinhaAdicaoDeProdutos" sourcename="Preenche cores do produto &quot;${coresDoProduto}&quot;">
+<kw name="Type Text" library="Browser">
+<arg>${campoCoresDoProduto}</arg>
+<arg>${coresDoProduto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230104 22:50:20.600" level="INFO">Types the text 'Branco, Preto, Azul' in the given field.</msg>
+<status status="PASS" starttime="20230104 22:50:20.599" endtime="20230104 22:50:20.620"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:20.700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-20.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:20.620" endtime="20230104 22:50:20.700"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:20.599" endtime="20230104 22:50:20.700"/>
+</kw>
+<kw name="Pressiona botao Salvar" library="ResourceLojinhaAdicaoDeProdutos">
+<kw name="Click" library="Browser">
+<arg>${botaoSalvar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:20.701" endtime="20230104 22:50:20.894"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:20.701" endtime="20230104 22:50:20.894"/>
+</kw>
+<kw name="Verifica mensagem toast &quot;O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00&quot;" library="ResourceLojinhaProdutos" sourcename="Verifica mensagem toast &quot;${mensagem}&quot;">
+<kw name="Get Text" library="Browser">
+<arg>${toastErro}</arg>
+<arg>contains</arg>
+<arg>${mensagem}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230104 22:50:20.895" endtime="20230104 22:50:21.951"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230104 22:50:22.146" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-21.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 22:50:21.952" endtime="20230104 22:50:22.146"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:20.895" endtime="20230104 22:50:22.147"/>
+</kw>
+<status status="PASS" starttime="20230104 22:50:16.594" endtime="20230104 22:50:22.147"/>
+</test>
+<status status="PASS" starttime="20230104 22:50:05.043" endtime="20230104 22:50:22.650"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="ProdutosLojinha">ProdutosLojinha</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

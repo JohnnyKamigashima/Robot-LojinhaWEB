@@ -1,0 +1,256 @@
+{"level":30,"time":"2023-01-05T01:50:05.470Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Listening on 63252"}
+{"level":30,"time":"2023-01-05T01:50:05.544Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:05.544Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:05.546Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:05.546Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:05.548Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-05T01:50:06.118Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-05T01:50:06.122Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-05T01:50:06.122Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-05T01:50:06.131Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:06.573Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-05T01:50:06.573Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:07.737Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-05T01:50:07.741Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:07.742Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with .input-field.col.s12 h4 in page."}
+{"level":30,"time":"2023-01-05T01:50:07.775Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Retrieved text for element .input-field.col.s12 h4 containing Acessar a Lojinha"}
+{"level":30,"time":"2023-01-05T01:50:07.775Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:07.777Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:07.852Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:07.854Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:07.854Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Usuário in page."}
+{"level":30,"time":"2023-01-05T01:50:07.890Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:07.891Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:07.891Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=usuario in page."}
+{"level":30,"time":"2023-01-05T01:50:07.904Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:07.905Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:07.969Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:07.971Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:07.971Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Senha in page."}
+{"level":30,"time":"2023-01-05T01:50:08.001Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:08.002Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:08.002Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=senha in page."}
+{"level":30,"time":"2023-01-05T01:50:08.012Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:08.013Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:08.085Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:08.087Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:08.087Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=ENTRAR in page."}
+{"level":30,"time":"2023-01-05T01:50:08.900Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:08.904Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:08.904Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Adicionar produto in page."}
+{"level":30,"time":"2023-01-05T01:50:09.692Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:09.694Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:09.694Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtonome in page."}
+{"level":30,"time":"2023-01-05T01:50:09.726Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:09.728Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:09.803Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:09.805Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:09.805Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtovalor in page."}
+{"level":30,"time":"2023-01-05T01:50:10.111Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:10.112Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:10.188Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:10.190Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:10.190Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtocores in page."}
+{"level":30,"time":"2023-01-05T01:50:10.209Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:10.210Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:10.293Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:10.295Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:10.295Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with button.btn in page."}
+{"level":30,"time":"2023-01-05T01:50:10.520Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:10.523Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:10.523Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with .toast in page."}
+{"level":30,"time":"2023-01-05T01:50:10.761Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Retrieved text for element .toast containing Produto adicionado com sucesso"}
+{"level":30,"time":"2023-01-05T01:50:10.761Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:10.763Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:10.836Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:10.837Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.838Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.839Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.839Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.840Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:10.840Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-05T01:50:10.840Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:10.842Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.842Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.843Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:10.843Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:10.843Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:10.843Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:10.844Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.844Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.845Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:10.845Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-05T01:50:10.845Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:10.847Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-05T01:50:10.870Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Removed page=c34c70f8-05b9-46b1-83d3-12168da12e27 from context=54e1945d-0220-4ac7-82c8-fd8c06c01002 page stack"}
+{"level":30,"time":"2023-01-05T01:50:10.879Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-05T01:50:10.880Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.880Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:10.881Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-05T01:50:11.099Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-05T01:50:11.103Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-05T01:50:11.104Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-05T01:50:11.109Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:11.401Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-05T01:50:11.401Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:12.488Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-05T01:50:12.491Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:12.491Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with .input-field.col.s12 h4 in page."}
+{"level":30,"time":"2023-01-05T01:50:12.518Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Retrieved text for element .input-field.col.s12 h4 containing Acessar a Lojinha"}
+{"level":30,"time":"2023-01-05T01:50:12.518Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:12.520Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:12.589Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:12.591Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:12.591Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Usuário in page."}
+{"level":30,"time":"2023-01-05T01:50:12.625Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:12.626Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:12.626Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=usuario in page."}
+{"level":30,"time":"2023-01-05T01:50:12.636Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:12.638Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:12.705Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:12.707Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:12.707Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Senha in page."}
+{"level":30,"time":"2023-01-05T01:50:12.737Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:12.738Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:12.738Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=senha in page."}
+{"level":30,"time":"2023-01-05T01:50:12.747Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:12.749Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:12.826Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:12.828Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:12.828Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=ENTRAR in page."}
+{"level":30,"time":"2023-01-05T01:50:13.597Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:13.600Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:13.600Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Adicionar produto in page."}
+{"level":30,"time":"2023-01-05T01:50:14.358Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:14.360Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:14.360Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtonome in page."}
+{"level":30,"time":"2023-01-05T01:50:14.672Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:14.673Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:14.738Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:14.740Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:14.740Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtovalor in page."}
+{"level":30,"time":"2023-01-05T01:50:14.753Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:14.754Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:14.829Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:14.830Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:14.830Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtocores in page."}
+{"level":30,"time":"2023-01-05T01:50:14.849Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:14.851Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:14.923Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:14.925Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:14.925Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with button.btn in page."}
+{"level":30,"time":"2023-01-05T01:50:15.106Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:15.109Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:15.109Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with .toast in page."}
+{"level":30,"time":"2023-01-05T01:50:16.096Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Retrieved text for element .toast containing O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"}
+{"level":30,"time":"2023-01-05T01:50:16.096Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:16.097Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:16.290Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:16.291Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.292Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.292Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.293Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.293Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:16.293Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-05T01:50:16.293Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:16.297Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.297Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.298Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:16.298Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:16.298Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:16.298Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:16.299Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.299Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.300Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:16.300Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-05T01:50:16.300Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:16.302Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-05T01:50:16.323Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Removed page=306dd891-e557-48c9-adc3-1252f49ffd86 from context=2b4cc167-ee37-4aaf-a8ff-e792136617bc page stack"}
+{"level":30,"time":"2023-01-05T01:50:16.593Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-05T01:50:16.594Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.594Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:16.595Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-05T01:50:16.817Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-05T01:50:16.820Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-05T01:50:16.820Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-05T01:50:16.824Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:17.107Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-05T01:50:17.107Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:18.245Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-05T01:50:18.248Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:18.248Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with .input-field.col.s12 h4 in page."}
+{"level":30,"time":"2023-01-05T01:50:18.274Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Retrieved text for element .input-field.col.s12 h4 containing Acessar a Lojinha"}
+{"level":30,"time":"2023-01-05T01:50:18.275Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:18.276Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:18.352Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:18.354Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:18.354Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Usuário in page."}
+{"level":30,"time":"2023-01-05T01:50:18.396Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:18.398Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:18.398Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=usuario in page."}
+{"level":30,"time":"2023-01-05T01:50:18.408Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:18.409Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:18.472Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:18.474Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:18.474Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Senha in page."}
+{"level":30,"time":"2023-01-05T01:50:18.510Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:18.511Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:18.511Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=senha in page."}
+{"level":30,"time":"2023-01-05T01:50:18.519Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:18.521Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:18.594Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:18.595Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:18.595Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=ENTRAR in page."}
+{"level":30,"time":"2023-01-05T01:50:19.379Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:19.382Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:19.382Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with text=Adicionar produto in page."}
+{"level":30,"time":"2023-01-05T01:50:20.155Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:20.157Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:20.157Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtonome in page."}
+{"level":30,"time":"2023-01-05T01:50:20.185Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:20.187Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:20.259Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:20.260Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:20.260Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtovalor in page."}
+{"level":30,"time":"2023-01-05T01:50:20.270Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:20.272Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:20.598Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:20.599Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:20.599Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with id=produtocores in page."}
+{"level":30,"time":"2023-01-05T01:50:20.619Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method typeText"}
+{"level":30,"time":"2023-01-05T01:50:20.620Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:20.699Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:20.701Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-05T01:50:20.701Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with button.btn in page."}
+{"level":30,"time":"2023-01-05T01:50:20.893Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-05T01:50:20.896Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:20.896Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Strict mode is enabled, find Locator with .toast in page."}
+{"level":30,"time":"2023-01-05T01:50:21.950Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Retrieved text for element .toast containing O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"}
+{"level":30,"time":"2023-01-05T01:50:21.950Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getText"}
+{"level":30,"time":"2023-01-05T01:50:21.952Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:22.145Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-05T01:50:22.147Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.339Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.340Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.341Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.342Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:22.342Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-05T01:50:22.342Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:22.348Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.349Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.349Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:22.349Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:22.350Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:22.350Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-05T01:50:22.350Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.351Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.351Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-05T01:50:22.351Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-05T01:50:22.351Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-05T01:50:22.353Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-05T01:50:22.380Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Removed page=3ec0ecde-3307-4177-888b-02faad7e3a6a from context=5af9b8d8-4e39-4236-9ff1-b7597f6f3da2 page stack"}
+{"level":30,"time":"2023-01-05T01:50:22.648Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-05T01:50:22.650Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.650Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-05T01:50:22.666Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-01-05T01:50:22.798Z","pid":50336,"hostname":"johnnys-Mac-mini.local","msg":"End of node method closeAllBrowsers"}
