@@ -1,18 +1,45 @@
 *** Settings ***
+Library         RequestsLibrary
+Library         FakerLibrary    locale=pt_br    seed=120
+Variables   Resources/ResourceUser.py
+Variables   Resources/ResourceLojinhaApi.py
 
-Resource            ../CommonResource.robot
-Force Tags          MyTag
+Test Setup      Create Session    sessao    ${BaseURI}/${basePath}
 
+*** Test Cases ***
+Cria um usuario novo
+#    Cria usuario fake
+        ${usuario.nome}=  FakerLibrary.Name
+        ${usuario.usuario}=     FakerLibrary.User Name
+        ${usuario.password}=    FakerLibrary.Password
+        ${cabecalho}=    Create Dictionary    Content-Type=application/json
 
-*** Variables ***
+#   Faz a requisição
+        ${corpo}=    catenate
+        ...    {
+        ...     "usuarioNome":  "${usuario.nome}",
+        ...    "usuarioLogin": "${usuario.usuario}",
+        ...    "usuarioSenha": "${usuario.password}"
+        ...    }
 
-${robotVar} =            FooBarBaz
+        ${response}=    POST On Session    sessao    ${caminhoUsuarios}    data=${corpo}    headers=${cabecalho}
+        ${status_code}=    Convert To String    ${response.status_code}
+        Should Be Equal    ${status_code}    201
 
+#   Pega Token
+    ${corpo}=    catenate
+        ...    {
+        ...    "usuarioLogin": "${usuario.usuario}",
+        ...    "usuarioSenha": "${usuario.password}"
+        ...    }
 
-*** Testcases ***
+    ${response}=    POST On Session    sessao    ${caminhoLogin}    data=${corpo}    headers=${cabecalho}
+    ${status_code}=    Convert To String    ${response.status_code}
+    ${token}=    Set Variable    ${response.json()['data']['token']}
+    Should Be Equal    ${status_code}    200
 
-Foo Test Case
-    [tags]              FooTag
-    [Documentation]     Created by John Doe
-    Do An Action        Argument
-    Do Another Action   ${robotVar}
+#   Deleta usuario
+    ${cabecalho}=    Create Dictionary    Content-Type=application/json    token=${token}
+    ${response}=    DELETE On Session    sessao    ${caminhoDados}    headers=${cabecalho}
+    ${status_code}=    Convert To String    ${response.status_code}
+    Should Be Equal    ${status_code}    204
