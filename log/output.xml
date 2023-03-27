@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.9 on darwin)" generated="20230112 00:05:24.982" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginLojinhaAPI" source="/Users/johnnykamigashima/Documents/Automacao/Robot Framework/Lojinha/Tests/API/LoginLojinhaAPI.robot">
+<test id="s1-t1" name="Verifica se o Login válido seja bem sucedido" line="12">
+<kw name="Create Session" library="RequestsLibrary" type="SETUP">
+<arg>sessao</arg>
+<arg>${BaseURI}/${basePath}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230112 00:05:25.170" level="INFO">Creating Session using : alias=sessao, url=http://165.227.93.41/lojinha, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230112 00:05:25.170" endtime="20230112 00:05:25.171"/>
+</kw>
+<kw name="Make Default User" library="ResourceUser">
+<var>${usuario}</var>
+<msg timestamp="20230112 00:05:25.171" level="INFO">${usuario} = &lt;ResourceUser.User object at 0x102aaaad0&gt;</msg>
+<status status="PASS" starttime="20230112 00:05:25.171" endtime="20230112 00:05:25.171"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${cabecalho}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230112 00:05:25.171" level="INFO">${cabecalho} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230112 00:05:25.171" endtime="20230112 00:05:25.171"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${corpo}</var>
+<arg>{</arg>
+<arg>"usuarioLogin": "${usuario.usuario}",</arg>
+<arg>"usuarioSenha": "${usuario.password}"</arg>
+<arg>}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230112 00:05:25.172" level="INFO">${corpo} = { "usuarioLogin": "admin", "usuarioSenha": "admin" }</msg>
+<status status="PASS" starttime="20230112 00:05:25.171" endtime="20230112 00:05:25.172"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>sessao</arg>
+<arg>${caminhoLogin}</arg>
+<arg>data=${corpo}</arg>
+<arg>headers=${cabecalho}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230112 00:05:25.503" level="INFO">POST Request : url=http://165.227.93.41/lojinha/v2/login 
+ path_url=/lojinha/v2/login 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '52'} 
+ body={ "usuarioLogin": "admin", "usuarioSenha": "admin" } 
+ </msg>
+<msg timestamp="20230112 00:05:25.503" level="INFO">POST Response : url=http://165.227.93.41/lojinha/v2/login 
+ status=200, reason=OK 
+ headers={'Date': 'Thu, 12 Jan 2023 03:05:25 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Content-Length': '240', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'application/json'} 
+ body={"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY"},"message":"Sucesso ao realizar o login","error":""} 
+ </msg>
+<msg timestamp="20230112 00:05:25.504" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230112 00:05:25.172" endtime="20230112 00:05:25.504"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230112 00:05:25.504" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20230112 00:05:25.504" endtime="20230112 00:05:25.504"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230112 00:05:25.504" endtime="20230112 00:05:25.504"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${token}</var>
+<arg>${response.json()['data']['token']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230112 00:05:25.505" level="INFO">${token} = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY</msg>
+<status status="PASS" starttime="20230112 00:05:25.504" endtime="20230112 00:05:25.505"/>
+</kw>
+<status status="PASS" starttime="20230112 00:05:25.169" endtime="20230112 00:05:25.505"/>
+</test>
+<status status="PASS" starttime="20230112 00:05:24.983" endtime="20230112 00:05:25.505"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginLojinhaAPI">LoginLojinhaAPI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
