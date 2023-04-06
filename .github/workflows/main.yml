@@ -1,0 +1,2 @@
+- name: Robot Framework
+  uses: joonvena/robotframework-docker-action@v1.1
