@@ -1,6 +1,6 @@
 *** Settings ***
-Resource        ../Resources/ResourceLojinhaLogin.robot
-Resource        ../Resources/ResourceLojinhaProdutos.robot
+Resource        Resources/ResourceLojinhaLogin.robot
+Resource        Resources/ResourceLojinhaProdutos.robot
 
 Test Setup      Acessa página
 
