@@ -1,3 +1,9 @@
+name: Test push
+
+on:
+  push
+    
+jobs:
   robot_test:
     runs-on: ubuntu-latest
     name: Run Robot Framework Tests
