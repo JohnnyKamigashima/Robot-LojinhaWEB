@@ -1,7 +1,7 @@
 *** Settings ***
-Resource        Resources/ResourceLojinhaAdicaoDeProdutos.robot
-Resource        Resources/ResourceLojinhaProdutos.robot
-Resource        Resources/ResourceLojinhaLogin.robot
+Resource        ../Resources/ResourceLojinhaAdicaoDeProdutos.robot
+Resource        ../Resources/ResourceLojinhaProdutos.robot
+Resource        ../Resources/ResourceLojinhaLogin.robot
 
 Test Setup      Login com usuario admin
 
